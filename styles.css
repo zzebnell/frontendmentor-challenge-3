@@ -1,0 +1,356 @@
+:root {
+   --pink: hsl(322, 100%, 66%);
+   --very-pale-cyan: hsl(193, 100%, 96%);
+   --very-dark-cyan: hsl(192, 100%, 9%);
+   --grayish-blue: hsl(208, 11%, 55%);
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+button:hover {
+   cursor: pointer;
+}
+
+header {
+   display: flex;
+   height: 100vh;
+   flex-direction: column;
+   background: url(images/bg-hero-desktop.svg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-color: var(--very-pale-cyan);
+}
+
+header > nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 90%;
+   margin: 0 auto;
+}
+
+nav > figure {
+   text-align: left;
+   margin-right: 20%;
+}
+
+nav {
+   padding: 3% 0%;
+}
+
+nav > figure > img {
+   width: 80%;
+   min-width: 150px;
+}
+
+nav > button {
+   font-family: 'Poppins', sans-serif;
+   width: 180px;
+   padding: 10px 0;
+   border-radius: 30px;
+   border: none;
+   background: white;
+   box-shadow: 0px 1px 8px rgba(153, 153, 153, 0.3);
+}
+
+nav > button:hover {
+   color: var(--grayish-blue);
+}
+
+#welcome-container {
+   flex: 1;
+   flex-wrap: wrap;
+   display: flex;
+   font-family: 'Open Sans', sans-serif;
+}
+
+#welcome-container > div {
+   flex: 1;
+   padding: 70px;
+}
+
+#welcome-container > div:nth-child(1) button {
+   width: 55%;
+   min-width: 200px;
+   padding: 18px 0;
+   border-radius: 30px;
+   border: none;
+   background: var(--pink);
+   box-shadow: 2px 2px 6px var(--pink);
+   font-weight: 600;
+   color: var(--very-pale-cyan);
+}
+
+#welcome-container > div:nth-child(1) button:hover {
+   background: hsl(322, 100%, 76%);
+}
+
+#welcome-container > div:nth-child(1) h1 {
+   font-family: 'Poppins', sans-serif;
+   font-size: 45px;
+   font-weight: 600;
+}
+
+#welcome-container > div:nth-child(1) p {
+   font-size: 18px;
+   margin: 45px 0;
+}
+
+#welcome-container > div:nth-child(2) > img {
+   width: 100%;
+}
+
+#welcome-container > div:nth-child(2) {
+   flex: 1.4;
+}
+
+#article-container {
+   width: 80%;
+   padding-top: 100px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+
+.card {
+   border-radius: 10px;
+   box-shadow: 0px 0px 5px rgba(175, 175, 175, 0.5);
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.card:nth-child(even) {
+   flex-direction: row-reverse;
+}
+
+.card > div {
+   flex: 1;
+}
+
+.card-img figure {
+   margin: 0;
+}
+
+.card-img img {
+   width: 100%;
+   padding: 45px;
+}
+
+.card h2 {
+   font: normal 1.8em 'Poppins', sans-serif;
+   color: var(--very-dark-cyan);
+}
+
+.card p {
+   margin-top: 20px;
+   font: normal 1em 'Open Sans', sans-serif;
+   color: var(--grayish-blue);
+}
+
+.card-text {
+   padding: 100px;
+}
+
+#community-card {
+   border-radius: 10px;
+   box-shadow: 0px 0px 5px rgba(175, 175, 175, 0.5);
+   display: block;
+   position: relative;
+   width: 50%;
+   margin: 0 auto;
+   background-color: white;
+   padding: 40px 0 20px 0;
+   bottom: -80px;
+   z-index: 5;
+}
+
+#community-card > h2 {
+   font: bold 1.5em 'Poppins', sans-serif;
+   text-align: center;
+}
+
+#community-card button {
+   width: 45%;
+   min-width: 200px;
+   padding: 18px 0;
+   border-radius: 30px;
+   border: none;
+   background: var(--pink);
+   box-shadow: 0px 3px 8px rgba(175, 175, 175, 0.8);
+   font-weight: 600;
+   color: var(--very-pale-cyan);
+   display: block;
+   margin: 20px auto;
+}
+
+#community-card button:hover {
+   background: hsl(322, 100%, 76%);
+}
+
+footer {
+   background: var(--very-dark-cyan);
+   font: normal 1em 'Open Sans', sans-serif;
+   color: var(--very-pale-cyan);
+   padding: 100px 100px;
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 120px;
+   position: relative;
+}
+
+footer > figure > img {
+   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(44deg) brightness(105%) contrast(101%);
+   margin-bottom: 40px;
+}
+
+footer > section {
+   flex: 1;
+}
+
+.sec-2 {
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   row-gap: 20px;
+}
+
+.sec-2 a {
+   text-decoration: none;
+   color: var(--very-pale-cyan);
+   display: inline-block;
+   width: 50%;
+}
+
+.sec-2 a:hover {
+   text-decoration: underline;
+}
+
+footer figure {
+   flex: 1 1 100%;
+   width: 100%;
+}
+
+footer span {
+   position: absolute;
+   bottom: 10%;
+   right: 5%;
+   font-size: 0.8em;
+}
+
+.sec-1 li {
+   margin-bottom: 30px;
+}
+
+.sec li:nth-child(1) {
+   list-style: url(images/icon-location.svg);
+}
+
+.sec li:nth-child(2) {
+   list-style: url(images/icon-phone.svg);
+}
+
+.sec li:nth-child(3) {
+   list-style: url(images/icon-email.svg);
+}
+
+.sec-3 img {
+   display: inline-block;
+   width: 30px;
+   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(44deg) brightness(105%) contrast(101%);
+   margin-right: 10px;
+}
+
+.sec-3 img:hover {
+   cursor: pointer;
+   filter: invert(67%) sepia(71%) saturate(4829%) hue-rotate(293deg) brightness(99%) contrast(108%);
+}
+
+@media (max-width: 1100px) {
+   footer > section {
+      flex: 1 1 100%;
+   }
+
+   .sec-2 {
+      margin-bottom: 40px;
+   }
+
+   .sec-3 {
+      text-align: center;
+   }
+
+   footer span {
+      width: 100%;
+      text-align: center;
+      bottom: 5%;
+   }
+
+}
+
+@media (max-width: 850px) {
+   .card > div {
+      flex: 1 1 100%;
+   }
+   
+   .card-text {
+      padding: 60px;
+   }
+
+   header {
+      height: 100%;
+      background: url(images/bg-hero-mobile.svg);
+   }
+
+   #welcome-container > div {
+      flex: 1 1 100%;
+      padding-bottom: 35px;
+   }
+
+   #welcome-container > div:nth-child(2) {
+      padding-top: 10px;
+      padding-bottom: 80px;
+   }
+
+   #welcome-container > div:nth-child(2) > img {
+      text-align: center;
+   }
+
+   #community-card {
+      width: 90%;
+   }
+
+   #community-card > h2 {
+      font-size: 1.3em;
+   }
+
+   #welcome-container > div:nth-child(1) p {
+      text-align: center;
+   }
+
+   #welcome-container > div:nth-child(1) h1 {
+      font-size: 1.8em;
+      text-align: center;
+   }
+
+   #welcome-container > div:nth-child(1) button {
+      width: 90%;
+      display: block;
+      margin: 0 auto;
+   }
+
+}
+
+@media (max-width: 570px) {
+   .sec-2 a {
+      flex: 1 1 100%;
+   }
+
+   footer > figure > img {
+      width: 100%;
+   }
+}
